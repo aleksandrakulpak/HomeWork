@@ -1,0 +1,30 @@
+#include <iostream>
+//#include <string>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	int a, b, c, d, m, n, s, i, j, count, res;
+
+
+	cout << "\nПечатаем таблицу квадратов целых положительных нечетных чисел\n";
+
+	cout << "\nДо какого числа вы хотите вывести все квадраты целых положительных чисел? N = ";
+	cin >> n;
+
+	int k, p;
+	
+
+
+	for (i = 0; i <n; i++) {
+
+		k = i + 1; p = k * k;
+		if (k % 2 != 0) printf("\n\tчисло %3d в квадрате равно %3d", k, p);
+
+	}
+	cout << endl << endl << "\t";
+	system("pause");
+	return 0;
+}
